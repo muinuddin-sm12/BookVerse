@@ -1,5 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import { FadeLoader } from 'react-spinners';
+import { saveBook } from '../utilities/utility';
 const BookDetails = () => {
     const {bookId} = useParams();
     const [book, setBook] = useState(null);
@@ -14,9 +16,17 @@ const BookDetails = () => {
         })
     },[bookId])
     if(!book){
-        return <div>Loading</div>
+        return (
+            <div className='flex justify-center items-center h-[calc(100vh-126px)]'>
+                <FadeLoader color='#23BE0A'/>
+            </div>
+        )
     }
     // console.log(book)
+    const handleRead = (singleBook) =>{
+        saveBook(singleBook)
+        console.log(singleBook)
+    }
   return (
     <div className="flex flex-col md:flex-row lg:gap-10 gap-6  py-10 justify-between items-center max-w-[1440px] mx-auto px-4 md:px-[135px] rounded-3xl">
       <div className="flex-1 rounded-2xl overflow-hidden h-[720px]">
@@ -69,8 +79,8 @@ const BookDetails = () => {
           </tr>
         </table>
         <div className='flex items-center gap-4'>
-          <button className='px-4 py-2 bg-[#50B1C9] border text-white hover:text-black hover:bg-white font-semibold rounded-lg'>Read</button>
-          <button className='px-4 py-2 bg-[#50B1C9] border text-white hover:text-black hover:bg-white font-semibold rounded-lg'>Wishlist</button>
+          <button onClick={()=> handleRead(book)} className='px-4 py-2 bg-[#23BE0A] transition duration-300 border text-white hover:text-black hover:bg-white font-semibold rounded-lg'>Read</button>
+          <button className='px-4 py-2 bg-[#50B1C9] transition duration-300 border text-white hover:text-black hover:bg-white font-semibold rounded-lg'>Wishlist</button>
         </div>
       </div>
     </div>
