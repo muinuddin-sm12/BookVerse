@@ -2,10 +2,10 @@
 import { FaRegStar } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 const SingleBook = ({ book }) => {
-  const { image, tags, bookName, author, category, rating } = book;
+  const { image, tags, bookName, author, category, rating, bookId } = book;
 //   console.log(book);
   return (
-    <Link to="/" className="flex flex-col p-6 rounded-2xl border">
+    <Link to={`/book/${bookId}`} className="flex flex-col p-4 rounded-2xl border">
       <img
         alt=""
         className="object-cover w-full rounded-2xl h-[280px] dark:bg-gray-500"
@@ -18,7 +18,7 @@ const SingleBook = ({ book }) => {
               key={index}
               className="font-medium rounded-[30px] px-4 py-[6px] bg-[#23BE0A0D] text-[#23BE0A]"
             >
-              {tag}
+              #{tag}
             </p>
           ))}
         </div>
