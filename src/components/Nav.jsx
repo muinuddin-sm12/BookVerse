@@ -1,9 +1,9 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
     <div className="max-w-[1440px] py-10 mx-auto px-4 md:px-[135px] flex justify-between items-center">
-      <a className="text-3xl font-bold">BookVerse</a>
+      <Link to="/" className="text-3xl font-bold">BookVerse</Link>
       <ul className="gap-4 hidden lg:flex items-center font-medium text-lg">
         <NavLink to="/" className={({isActive})=> isActive? "text-[#23BE0A] border-[1px] border-[#23BE0A] rounded-lg py-1 px-3" : "py-1 px-3"}>
           Home
