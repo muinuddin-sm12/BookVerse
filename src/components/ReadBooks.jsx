@@ -19,42 +19,43 @@ const ReadBooks = () => {
             <img className=" h-full object-cover w-full" src={book.image} alt="" />
           </div>
           <div>
-            <h1 className="text-xl font-semibold">The Catcher in the Rye</h1>
-            <p className="py-2">By : Awlad Hossain</p>
-            <div className="flex items-center gap-4">
+            <h1 className="text-xl font-semibold">{book.bookName}</h1>
+            <p className="py-2">By : {book.author}</p>
+            <div className="flex items-center gap-3">
               <strong>Tag</strong>
               <div className="flex items-center">
-                <p className="font-medium rounded-[30px] px-4 py-[6px] bg-[#23BE0A0D] text-[#23BE0A]">
-                  #Young Adult
+                {
+                    book.tags.map((tag,index)=> (
+                        <p key={index} className="font-medium rounded-[30px] px-4 py-[6px] bg-[#23BE0A0D] text-[#23BE0A]">
+                  #{tag}
                 </p>
-                <p className="font-medium rounded-[30px] px-4 py-[6px] bg-[#23BE0A0D] text-[#23BE0A]">
-                  #Young
-                </p>
+                    ))
+                }
               </div>
               <div className="flex items-center gap-2">
                 <SlLocationPin />
-                <p>Year of Publishing: 1924</p>
+                <p>Year of Publishing: {book.yearOfPublishing}</p>
               </div>
             </div>
             <div className="flex items-center gap-6 py-2 border-b text-[#13131399]">
               <div className="flex items-center gap-2">
                 <FaUserGroup />
-                <p>Publisher: </p>
+                <p>Publisher: {book.publisher}</p>
               </div>
               <div className="flex items-center gap-2">
                 <MdOutlineInsertPageBreak />
-                <p>Page: </p>
+                <p>Page: {book.totalPages}</p>
               </div>
             </div>
             <div className="flex items-center gap-2 mt-3">
               <p className="text-[#328EFF] bg-[#c0dcff] px-4 py-1 rounded-full font-medium">
-                Category: Classic
+                Category: {book.category}
               </p>
               <p className="text-[#FFAC33] bg-[#ffe9c7] px-4 py-1 rounded-full font-medium">
-                Rating: 4.5
+                Rating: {book.rating}
               </p>
               <Link
-                to=""
+                to={`/book/${book.bookId}`}
                 className="bg-[#23BE0A] px-4 py-1 text-white font-semibold rounded-full"
               >
                 View Details
