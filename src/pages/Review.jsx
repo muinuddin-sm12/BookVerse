@@ -1,6 +1,6 @@
 const Review = () => {
   return (
-    <div className="max-w-[1440px] py-10 mx-auto px-4 md:px-[135px] flex justify-center items-center">
+    <div className="max-w-[1440px] py-10 mx-auto px-4 md:px-[135px] flex justify-center items-center mb-10">
       <div className="flex flex-col max-w-xl p-8 shadow-sm rounded-xl lg:p-12 dark:bg-gray-50 dark:text-gray-800">
         <div className="flex flex-col items-center w-full">
           <h2 className="text-3xl font-semibold text-center">

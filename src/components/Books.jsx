@@ -4,7 +4,7 @@ const Books = () => {
   const books = useLoaderData();
   // console.log(books);
   return (
-    <section className="max-w-[1440px] py-10 mx-auto px-4 md:px-[135px] sm:py-12">
+    <section className="max-w-[1440px] py-10 mx-auto px-4 md:px-[135px] sm:py-12 mb-10">
       <div className="container mx-auto space-y-8">
         <div className="space-y-2 text-center">
           <h2 className="text-3xl font-bold">Books</h2>

@@ -3,7 +3,7 @@ import hero_image from "../assets/images/Hero_image.png";
 const Hero = () => {
   return (
     <div className="max-w-[1440px] flex justify-between items-center mx-auto px-4 md:px-[135px] rounded-3xl md:mb-10">
-      <div className="w-full flex bg-[#1313130D] z-30 flex-col-reverse md:flex-row gap-4 md:gap-0 py-6 md:py-0 items-center min-h-[554px] px-6 md:px-28 rounded-3xl ">
+      <div className="w-full flex bg-gray-100 z-30 flex-col-reverse md:flex-row gap-4 md:gap-0 py-6 md:py-0 items-center min-h-[554px] px-6 md:px-28 rounded-3xl ">
         <div className="flex-1">
           <h1 className="text-3xl md:text-5xl font-bold mb-8">
             Books to freshen up your bookshelf

@@ -12,7 +12,7 @@ const ReadBooks = () => {
   }, []);
 //   console.log(books);
   return (
-    <div className="max-w-[1440px] flex flex-col gap-6 h-screen mt-6">
+    <div className="max-w-[1440px] min-h-[calc(100vh-475px)] flex flex-col gap-6 mb-20 mt-6">
       {books.map((book, index) => (
         <div key={index} className="w-full p-5 rounded-xl border flex gap-6 items-center">
           <div className="h-[230px] w-[180px] overflow-hidden rounded-xl">

@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="max-w-[1440px] py-10 mx-auto px-4 md:px-[135px]">
+    <div className="max-w-[1440px] h-[calc(100vh-407px)] py-10 mx-auto px-4 md:px-[135px]">
       <section className="py-6 rounded-2xl dark:bg-gray-100 dark:text-gray-900">
         <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
           <div className="py-6 md:py-0 md:px-6">
