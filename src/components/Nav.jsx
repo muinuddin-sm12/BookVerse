@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 const Nav = () => {
   return (
     <div className="max-w-[1440px] py-10 mx-auto px-4 md:px-[135px] flex justify-between items-center">
-      <Link to="/" className="text-3xl font-bold">BookVerse</Link>
+      <Link to="/" className="text-[36px] font-bold bg-300% bg-gradient-to-r from-[#23BE0A] via-blue-500 to-[#59C6D2] text-transparent bg-clip-text animate-gradient">BookVerse</Link>
       <ul className="gap-4 hidden lg:flex items-center font-medium text-lg">
         <NavLink to="/" className={({isActive})=> isActive? "text-[#23BE0A] border-[1px] border-[#23BE0A] rounded-lg py-1 px-3" : "py-1 px-3"}>
           Home
@@ -13,6 +13,12 @@ const Nav = () => {
         </NavLink>
         <NavLink to="/pagestoread" className={({isActive})=> isActive? "text-[#23BE0A] border-[1px] border-[#23BE0A] rounded-lg py-1 px-3" : "py-1 px-3"}>
         Pages to Read
+        </NavLink>
+        <NavLink to="/review" className={({isActive})=> isActive? "text-[#23BE0A] border-[1px] border-[#23BE0A] rounded-lg py-1 px-3" : "py-1 px-3"}>
+        Review
+        </NavLink>
+        <NavLink to="/contact" className={({isActive})=> isActive? "text-[#23BE0A] border-[1px] border-[#23BE0A] rounded-lg py-1 px-3" : "py-1 px-3"}>
+        Contact
         </NavLink>
       </ul>
       <div className="flex items-center gap-4">

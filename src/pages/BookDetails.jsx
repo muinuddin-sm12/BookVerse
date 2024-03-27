@@ -30,9 +30,7 @@ const BookDetails = () => {
     const handleWishList = (singleBook) => {
       saveBookToWishList(singleBook)
     }
-    // const handleReadAndWish = (singleBook) => {
-    //   readAndWish(singleBook)
-    // }
+
   return (
     <div className="flex flex-col md:flex-row lg:gap-10 gap-6  py-10 justify-between items-center max-w-[1440px] mx-auto px-4 md:px-[135px] rounded-3xl">
       <div className="flex-1 rounded-2xl overflow-hidden h-[720px]">
@@ -55,7 +53,6 @@ const BookDetails = () => {
             </p>
                 ))
             }
-            
           </div>
         </div>
         <table className='mb-4'>

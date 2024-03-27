@@ -1,4 +1,3 @@
-// import { FaRegStar } from "react-icons/fa6";
 import { useLoaderData } from "react-router-dom";
 import SingleBook from "./SingleBook";
 const Books = () => {

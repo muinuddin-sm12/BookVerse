@@ -6,6 +6,8 @@ import ListedBooks from "../pages/ListedBooks";
 import PagesToRead from "../pages/PagesToRead";
 import ReadBooks from "../components/ReadBooks";
 import Wishlist from "../components/Wishlist";
+import Review from "../pages/Review";
+import Contact from "../pages/Contact";
 
 export const router = createBrowserRouter([
     {
@@ -38,6 +40,14 @@ export const router = createBrowserRouter([
         {
           path: "/pagestoread",
           element: <PagesToRead/>
+        },
+        {
+          path: "/review",
+          element: <Review/>
+        },
+        {
+          path: "/contact",
+          element: <Contact/>
         }
       ]
     },
