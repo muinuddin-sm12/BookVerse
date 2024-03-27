@@ -35,7 +35,7 @@ const PagesToRead = () => {
   };
 
   return (
-    <div className="max-w-[1440px] text-sm py-10 mx-auto px-4 md:px-[135px]">
+    <div className="max-w-[1440px] flex justify-center text-sm py-10 mx-auto px-4 md:px-[135px]">
       <BarChart
         width={900}
         height={500}

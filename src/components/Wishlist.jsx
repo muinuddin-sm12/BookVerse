@@ -4,6 +4,7 @@ import { MdOutlineInsertPageBreak } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getBooksFromWish } from "../utilities/utility";
+// import toast from "react-hot-toast";
 
 const Wishlist = () => {
     const [books, setBooks] = useState([]);
@@ -11,6 +12,15 @@ const Wishlist = () => {
         const storedBooks = getBooksFromWish();
         setBooks(storedBooks);
     }, []);
+
+    // const [readBook, setReadBook]= useState([]);
+    // useEffect(()=> {
+    //     const storeReadBooks = getBooks();
+    //     setReadBook(storeReadBooks)
+    // },[])
+    // if(readBook.id===books.id){
+    //     toast.error("Already read it!")
+    // }
 
   return (
     <div className="max-w-[1440px] flex flex-col gap-6 h-screen mt-6">
