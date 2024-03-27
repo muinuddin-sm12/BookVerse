@@ -1,8 +1,22 @@
-# React + Vite
+# BookVerse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Your Gateway to Literary Discovery.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Features
+
+- Responsiveness
+- Custom Shape Bar Chart for Read Books
+- Good user experience
+- Cross platform
+
+
+## Demo
+
+* Live Preview: https://b9a8-bookverse.netlify.app
+
+
+## Authors
+
+- [@muinuddin-sm12](https://www.github.com/muinuddin-sm12)
