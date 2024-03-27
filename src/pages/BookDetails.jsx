@@ -1,11 +1,11 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { FadeLoader } from 'react-spinners';
-import { saveBook } from '../utilities/utility';
+import { saveBook, saveBookToWishList } from '../utilities/utility';
+
 const BookDetails = () => {
     const {bookId} = useParams();
     const [book, setBook] = useState(null);
-    // const { image, bookName, author, category, review, tags, totalPages, publisher, yearOfPublishing, rating} = book;
 
     useEffect(()=>{
         fetch('/books.json')
@@ -25,7 +25,10 @@ const BookDetails = () => {
     // console.log(book)
     const handleRead = (singleBook) =>{
         saveBook(singleBook)
-        console.log(singleBook)
+        // console.log(singleBook)
+    } 
+    const handleWishList = (singleBook) => {
+      saveBookToWishList(singleBook)
     }
   return (
     <div className="flex flex-col md:flex-row lg:gap-10 gap-6  py-10 justify-between items-center max-w-[1440px] mx-auto px-4 md:px-[135px] rounded-3xl">
@@ -80,7 +83,7 @@ const BookDetails = () => {
         </table>
         <div className='flex items-center gap-4'>
           <button onClick={()=> handleRead(book)} className='px-4 py-2 bg-[#23BE0A] transition duration-300 border text-white hover:text-black hover:bg-white font-semibold rounded-lg'>Read</button>
-          <button className='px-4 py-2 bg-[#50B1C9] transition duration-300 border text-white hover:text-black hover:bg-white font-semibold rounded-lg'>Wishlist</button>
+          <button onClick={()=> handleWishList(book)} className='px-4 py-2 bg-[#50B1C9] transition duration-300 border text-white hover:text-black hover:bg-white font-semibold rounded-lg'>Wishlist</button>
         </div>
       </div>
     </div>

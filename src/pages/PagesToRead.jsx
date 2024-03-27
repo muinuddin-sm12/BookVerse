@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from "recharts";
 import { getBooks } from "../utilities/utility";
@@ -34,7 +35,7 @@ const PagesToRead = () => {
   };
 
   return (
-    <div className="max-w-[1440px] py-10 mx-auto px-4 md:px-[135px]">
+    <div className="max-w-[1440px] text-sm py-10 mx-auto px-4 md:px-[135px]">
       <BarChart
         width={900}
         height={500}
