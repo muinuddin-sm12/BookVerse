@@ -40,7 +40,7 @@ const Wishlist = () => {
   };
 
   return (
-    <div className="max-w-[1440px] flex flex-col gap-6 justify-center items-center gap-6 min-h-screen mb-8 mt-6">
+    <div className="max-w-[1440px] min-h-[calc(100vh-475px)] flex flex-col justify-center items-center gap-6 mb-8 mt-6">
       <div
         id="sortButton"
         className="right-0 top-[100px] hidden relative  py-2"

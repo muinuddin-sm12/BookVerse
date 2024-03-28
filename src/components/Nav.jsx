@@ -67,7 +67,7 @@ const Nav = () => {
         </div>
         <Link
           to="/"
-          className="text-[36px] font-bold bg-300% bg-gradient-to-r from-[#23BE0A] via-blue-500 to-[#59C6D2] text-transparent bg-clip-text animate-gradient"
+          className="text-2xl md:text-[36px] font-bold bg-300% bg-gradient-to-r from-[#23BE0A] via-blue-500 to-[#59C6D2] text-transparent bg-clip-text animate-gradient"
         >
           BookVerse
         </Link>
