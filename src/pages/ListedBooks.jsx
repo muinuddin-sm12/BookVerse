@@ -1,21 +1,16 @@
 import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
+// import ReadBooks from "../components/ReadBooks";
 
 const ListedBooks = () => {
   const [tabIndex, setTabIndex] = useState(0);
+
   return (
-    <div className="max-w-[1440px]  mx-auto px-4 md:px-[135px]">
+    <div className="max-w-[1440px] mx-auto px-4 md:px-[135px]">
       <div className="py-5 text-center font-bold text-xl w-full bg-zinc-200 rounded-xl mb-4">
         Books
       </div>
-      <div className="w-full flex justify-center items-center mb-10 py-6">
-        <select name="Sort By" id="">
-          Sort By
-          <option value="sdfe">sdfeg</option>
-          <option value="gee">dfggre</option>
-          <option value="fgg">sdgerg</option>
-        </select>
-      </div>
+
       <div className="flex justify-start items-start overflow-x-auto overflow-y-hidden flex-nowrap ">
         <Link
           to=""
