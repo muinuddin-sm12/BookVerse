@@ -3,14 +3,19 @@ import { FaRegStar } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 const SingleBook = ({ book }) => {
   const { image, tags, bookName, author, category, rating, bookId } = book;
-//   console.log(book);
+  //   console.log(book);
   return (
-    <Link to={`/book/${bookId}`} className="flex flex-col p-4 rounded-2xl border">
-      <img
-        alt=""
-        className="object-cover w-full rounded-2xl h-[280px] dark:bg-gray-500"
-        src={image}
-      />
+    <Link
+      to={`/book/${bookId}`}
+      className="flex flex-col p-4 rounded-2xl border"
+    >
+      <div className="h-[280px] p-6 overflow-hidden rounded-2xl  bg-[#F3F3F3]">
+        <img
+          alt=""
+          className="object-cover h-full mx-auto rounded-md"
+          src={image}
+        />
+      </div>
       <div className="flex flex-col flex-1 mt-6">
         <div className="flex flex-wrap gap-2 mb-3 text-sm">
           {tags.map((tag, index) => (

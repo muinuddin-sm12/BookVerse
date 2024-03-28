@@ -34,7 +34,7 @@ const BookDetails = () => {
   return (
     <div className="flex flex-col md:flex-row lg:gap-10 gap-6  py-10 justify-between items-center max-w-[1440px] mx-auto px-4 md:px-[135px] rounded-3xl">
       <div className="flex-1 rounded-2xl overflow-hidden h-[720px]">
-        <img className="w-full h-full object-cover" src={book.image} alt="" />
+        <img className="h-full object-cover mx-auto rounded-2xl" src={book.image} alt="" />
       </div>
       <div className='flex-1'>
         <h1 className='text-3xl font-semibold mb-2'>{book.bookName}</h1>
