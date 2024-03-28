@@ -50,13 +50,13 @@ const ReadBooks = () => {
             Sort By
           </summary>
           <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-            <li onClick={() => handleSorting("rating")} title="Please Double Click!">
+            <li onClick={() => handleSorting("rating")} className="tooltip" data-tip="Please Double Click!">
               <a>Rating</a>
             </li>
-            <li onClick={() => handleSorting("pages")} title="Please Double Click!">
+            <li onClick={() => handleSorting("pages")} className="tooltip" data-tip="Please Double Click!">
               <a>Number of pages</a>
             </li>
-            <li onClick={() => handleSorting("year")} title="Please Double Click!">
+            <li onClick={() => handleSorting("year")} className="tooltip" data-tip="Please Double Click!">
               <a>Published year</a>
             </li>
           </ul>
